@@ -1,0 +1,53 @@
+
+.main{
+   
+    height: 100vh;
+background-color: rgba(122, 126, 185, 0.599);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+.card{
+    margin-top: 33px;
+    border: 1px solid rgb(12, 3, 21);
+    box-shadow: rgba(216, 103, 103, 0.16) 0px 3px 6px, rgba(222, 17, 17, 0.23) 0px 3px 6px;
+    padding: 43px;
+    padding: 13px 60px;
+    position: absolute;
+    width: 500px;
+    background-color: rgba(238, 241, 247, 0.36);
+    position: absolute;
+    top: 1%;
+    left: 30%;
+    color: rgb(20, 19, 19);
+    }
+    h2{
+        font-size: 28px;
+        font-style: italic;
+    }
+
+    mat-labe{
+    margin-top: 2%;
+ }
+
+
+
+    .mat-mdc-text-field-wrapper {
+        width: 155%;
+        z-index: 0;
+    }
+
+    .mat-mdc-text-field-wrapper {
+        width: 175%;
+        z-index: 0;
+    }
+
+    .gh {
+        width: 390px;
+    }

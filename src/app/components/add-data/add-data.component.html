@@ -1,0 +1,74 @@
+<div class="flex">
+    <h2 class="" mat-dialog-title style="color: blue;"> Add Data Student Form
+    </h2>
+    <div class="mb-2"><mat-divider> </mat-divider></div>
+    <div mat-dialog-content class="">
+
+        <div class="">
+            <div class="p-4 bg-light shadow rounded">
+                <form [formGroup]="addForm" class="example-form">
+                    <div class="row">
+                        <div class="col">
+                            <mat-form-field class="gh">
+                                <mat-label>Name</mat-label>
+                                <input type="text" matInput placeholder="Enter Your Name" formControlName="name">
+                            </mat-form-field>
+                        </div>
+
+                        <div class="mb-3 col">
+                            <mat-form-field class="gh">
+                                <mat-label>Number</mat-label>
+                                <input type="number" matInput placeholder="Enter Your Number" formControlName="mobile">
+                            </mat-form-field>
+
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="mb-3 col">
+                            <mat-form-field class="gh">
+                                <mat-label>Email ID</mat-label>
+                                <input type="email" matInput placeholder="Enter Your Email" formControlName="email">
+                            </mat-form-field>
+
+
+                        </div>
+                        <div class="mb-3 col">
+                            <mat-form-field class="gh">
+                                <mat-label>Class</mat-label>
+                                <input type="text" matInput placeholder="Enter Your Class " value=""
+                                    formControlName="class">
+                            </mat-form-field>
+
+                        </div>
+
+                        <!-- <mat-form-field appearance="fill" class="w-full">
+                            <mat-label>Department</mat-label>
+                            <mat-select formControlName="dept_id" [(value)]="selectedValue">
+                                <mat-option *ngFor="let key of depatmentData" [value]="key.id"> {{key.name}} </mat-option>
+                            </mat-select>
+                        </mat-form-field> -->
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col">
+                            <mat-form-field class="gh">
+                                <mat-label>Address</mat-label>
+                                <input type="text" matInput placeholder="Enter Your Number" formControlName="address">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-between  p-2 mt-2 mb-4">
+        <button mat-raised-button mat-dialog-close class="me-2 cursor-pointer"
+            style="margin-left: 4px; margin-right: 4px;">Close</button>
+        <button mat-raised-button color="primary" [disabled]="submit" (click)="onSave()">
+            Add Data </button>
+
+            <button mat-raised-button color="primary" [disabled]="submit" (click)="onUpdate()">
+                Update </button>
+    </div>
+</div>

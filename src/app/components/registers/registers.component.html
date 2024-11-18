@@ -1,0 +1,61 @@
+<div class="main">
+    <div class="container pb-5">
+        <div class="d-flex justify-content-center align-items-center " >
+            <div class="row">
+                <div class=" sm-col-1 md-col-1 ">
+                    <div class="p-4 bg-light mt-4 shadow rounded">
+                        <div class="text">
+                            <h2 class="text-center mb-3" style="color: blue;">
+                                Register Form
+                            </h2>
+                        </div>
+                        <form [formGroup]="form" class="example-form">
+
+                            <mat-form-field class="gh">
+                                <mat-label>Name</mat-label>
+                                <input type="text" matInput placeholder="Enter Your Name" value="Sushi"
+                                    formControlName="name">
+                            </mat-form-field>
+
+                            <div class="col">
+                                <div class="mb-3">
+                                    <mat-form-field class="gh">
+                                        <mat-label>Number</mat-label>
+                                        <input type="number" matInput placeholder="Enter Your Number" value="9132888677"
+                                            formControlName="number">
+                                    </mat-form-field>
+
+
+                                </div>
+                            </div>
+
+
+
+                            <div class="mb-3">
+                                <mat-form-field class="gh">
+                                    <mat-label>Email ID</mat-label>
+                                    <input type="email" matInput placeholder="Enter Your Email" value=""
+                                        formControlName="email">
+                                </mat-form-field>
+
+
+                            </div>
+                            <div class="mb-3">
+                                <mat-form-field class="gh">
+                                    <mat-label>Password</mat-label>
+                                    <input type="password" matInput placeholder="Enter Your Password " value=""
+                                        formControlName="password">
+                                </mat-form-field>
+
+                            </div>
+                            <button type="submit" mat-flat-button color="primary" (click)="onSubmit()" class="mb-3">Register</button>
+                        </form>
+                        <a style="cursor: pointer; color: rgb(7, 37, 206)" class="mt-4" routerLink="/login"> Allready
+                            Member ? Click to login ! </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

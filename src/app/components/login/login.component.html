@@ -1,0 +1,40 @@
+<div class="main">
+    <div class="container">
+        <div class="d-flex justify-content-center align-items-center ">
+        <div class="row">
+            <div class="">
+                <div class="p-4 bg-light mt-5 shadow rounded">
+                    <h2 class="text-center mb-3">
+                        Login Form
+                    </h2>
+                    <hr>
+                    <form [formGroup]="loginForm">
+
+                        <div class="mb-3">
+                            <mat-form-field class="gh">
+                                <mat-label>Email ID</mat-label>
+                                <input matInput placeholder="Enter Your Email" value="h@gmail.com" type="text"
+                                    formControlName="email">
+                            </mat-form-field>
+                        </div>
+                        <div class="mb-3">
+                            <mat-form-field class="gh">
+                                <mat-label>Password</mat-label>
+                                <input type="password" matInput placeholder="Enter Your Password " value=""
+                                    formControlName="password">
+                            </mat-form-field>
+
+                        </div>
+
+                        <button mat-flat-button color="primary" (click)="login()" class="mb-3">Login</button>
+
+                    </form>
+                    <a style="color:  rgb(47, 0, 255); margin-top: 10px; " routerLink="/registers"> Are you ? New
+                        user</a>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>

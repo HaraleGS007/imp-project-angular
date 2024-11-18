@@ -1,0 +1,23 @@
+
+
+.main{
+   
+    height: 100vh;
+ background-color: rgba(26, 14, 250, 0.284);
+   width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+mat-labe{
+    margin-top: 2%;
+}
+h2{
+font-size: 28px;
+font-style: italic;
+color: blue;
+}
+.gh {
+    width: 280px;
+}
